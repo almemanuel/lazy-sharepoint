@@ -1,7 +1,6 @@
-from setuptools import setup, find_packages
-
+from setuptools import setup
 setup(
-    name='lazy-sharepoint',
+    name='lazysharepoint',
     version='0.1',
     description='Library for interacting with SharePoint',
     long_description=open('README.md').read(),
@@ -9,7 +8,8 @@ setup(
     author='Emanuel Almeida',
     author_email='emanuel.almeida1998@outlook.com',
     url='https://github.com/almemanuel/lazy-sharepoint',
-    packages=find_packages(),
+    packages=['lazysharepoint'],
+    keywords='sharepoint office365',
     install_requires=[
         'office365-rest-python-client == 2.2.0'
     ],
