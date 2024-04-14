@@ -17,6 +17,7 @@ This project is under development, so if you have any suggestions, please let me
 - [ ] Search for a file
 - [ ] Upload file
 - [ ] Edit file
+- [ ] Delete a file
 
 ## 💻 Requeriments
 Before you begin, ensure you have met the following requirements:
