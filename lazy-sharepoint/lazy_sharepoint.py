@@ -2,7 +2,7 @@ from office365.sharepoint.client_context import ClientContext
 from office365.runtime.auth.user_credential import UserCredential
 from office365.sharepoint.files.file import File
 
-class SharePoint():
+class LazySharePoint():
     def __init__(self, site, username, password):
         self._site = site
         self._username = username
