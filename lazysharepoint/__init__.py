@@ -1,1 +1,0 @@
-from .sharepoint import LazySharePoint

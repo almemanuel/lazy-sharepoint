@@ -1,14 +1,14 @@
 from setuptools import setup
 setup(
-    name='lazysharepoint',
+    name='sharepoint-crud',
     version='0.1',
     description='Library for interacting with SharePoint',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     author='Emanuel Almeida',
     author_email='emanuel.almeida1998@outlook.com',
-    url='https://github.com/almemanuel/lazy-sharepoint',
-    packages=['lazysharepoint'],
+    url='https://github.com/almemanuel/sharepoint-crud',
+    packages=['sharepoint_crud'],
     keywords='sharepoint office365',
     install_requires=[
         'office365-rest-python-client == 2.2.0'
