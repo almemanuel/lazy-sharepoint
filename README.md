@@ -1,10 +1,10 @@
-# pypoint
+# sharepoint-crud
 
-![GitHub repo size](https://img.shields.io/github/repo-size/almemanuel/pypoint?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/almemanuel/pypoint?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/almemanuel/pypoint?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/almemanuel/pypoint?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/almemanuel/pypoint?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/almemanuel/sharepoint-crud?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/almemanuel/sharepoint-crud?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/almemanuel/sharepoint-crud?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/almemanuel/sharepoint-crud?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/almemanuel/sharepoint-crud?style=for-the-badge)
 
 
 > Solution to integrate SharePoint with your Python script
@@ -24,20 +24,39 @@ Before you begin, ensure you have met the following requirements:
 - you have installed a `python 3.8` or higher
 
 ## 🚀 Install pypoint
-- run the command: `pip install pypoint` to activate the virtual environment
+- run the command: `pip install sharepoint-crud` to activate the virtual environment
 - voilà!
 
 ## ☕ Run
 To run pypoint, you need a sharepoint account. You can instanciate an object with the following parameters:
 
 ```python
+from sharepoint-crud import SharePointCrud
 
-pass
+sharepoint = SharePointCrud(
+  'https://your-site.sharepoint.com/sites/your-library',
+  'your-email@your-domain.com',
+  'your-password'
+)
 
 ```
+
 Actually, is possible download a file from sharepoint:
 
 ```python
+file_content = sharepoint.get_file('your/folder/to/your/file', 'your-file.file_format')
+
+```
+An example:
+I have a file `example.csv` in the folder `my_library/Shared Files/my_folder` on SharePoint:
+```python
+from sharepoint-crud import SharePointCrud
+
+file_content = SharePointCrud(
+  'https://your-site.sharepoint.com/sites/your-library',
+  'your-email@your-domain.com',
+  'your-password'
+).get_file('my_library/Shared Files/my_folder', 'example.csv')
 ```
 
 ## 📫 Contributing
@@ -70,5 +89,5 @@ Alternatively, consult the GitHub documentation on [creating a pull request](htt
 
 This project is under license. See the file [LICENÇA](LICENSE.md) for more details.
 
-[⬆ Turn to top](#pypoint)
+[⬆ Turn to top](#sharepoint-crud)
 <br>
