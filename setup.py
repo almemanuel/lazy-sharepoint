@@ -1,7 +1,7 @@
 from setuptools import setup
 setup(
     name='sharepoint-crud',
-    version='1.1',
+    version='2.0',
     description='Library for interacting with SharePoint',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',

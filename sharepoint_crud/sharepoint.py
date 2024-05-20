@@ -98,7 +98,6 @@ class SharePointCrud():
         """
         conn = self._auth()
         target_folder_url = f'/sites/{folder_name}'
-        input(target_folder_url)
         file_info = FileCreationInformation()
         file_info.content = open(file, 'rb').read()
         file_info.url = os.path.basename(file)
