@@ -15,7 +15,7 @@ This project is under development, so if you have any suggestions, please let me
 
 - [x] Get file content
 - [ ] Search for a file
-- [ ] Upload file
+- [x] Upload file
 - [ ] Edit file
 - [ ] Delete a file
 
@@ -23,12 +23,12 @@ This project is under development, so if you have any suggestions, please let me
 Before you begin, ensure you have met the following requirements:
 - you have installed a `python 3.8` or higher
 
-## 🚀 Install pypoint
+## 🚀 Install sharepoint-crud
 - run the command: `pip install sharepoint-crud` to activate the virtual environment
 - voilà!
 
 ## ☕ Run
-To run pypoint, you need a sharepoint account. You can instanciate an object with the following parameters:
+To run sharepoint-crud, you need a sharepoint account. You can instanciate an object with the following parameters:
 
 ```python
 from sharepoint-crud import SharePointCrud
@@ -41,7 +41,7 @@ sharepoint = SharePointCrud(
 
 ```
 
-Actually, is possible download a file from sharepoint:
+Actually, is possible download and upload file. An example:
 
 ```python
 file_content = sharepoint.get_file('your/folder/to/your/file', 'your-file.file_format')
@@ -61,7 +61,7 @@ file_content = SharePointCrud(
 
 ## 📫 Contributing
 
-To contribute to pypoint, follow these steps:
+To contribute to sharepoint-crud, follow these steps:
 1. Fork this repository.
 2. Create a branch: `git checkout -b <branch_name>`.
 3. Make your changes and confirm them: `git commit -m '<commit_message>'`
