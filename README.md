@@ -31,7 +31,7 @@ Before you begin, ensure you have met the following requirements:
 To run sharepoint-crud, you need a sharepoint account. You can instanciate an object with the following parameters:
 
 ```python
-from sharepoint-crud import SharePointCrud
+from sharepoint_crud import SharePointCrud
 
 sharepoint = SharePointCrud(
   'https://your-site.sharepoint.com/sites/your-library',
@@ -50,7 +50,7 @@ file_content = sharepoint.get_file('your/folder/to/your/file', 'your-file.file_f
 An example:
 I have a file `example.csv` in the folder `my_library/Shared Files/my_folder` on SharePoint:
 ```python
-from sharepoint-crud import SharePointCrud
+from sharepoint_crud import SharePointCrud
 
 file_content = SharePointCrud(
   'https://your-site.sharepoint.com/sites/your-library',
